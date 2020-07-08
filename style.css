@@ -122,7 +122,18 @@ video {
 }
 
 @media (max-width: 700px) {
-    .unicorn{
+    .unicorn {
         transform: translateY(200px);
+    }
+    .textBox {
+        max-width: 500px;
+    }
+    .textBox h2 {
+        font-size: 2rem;
+        transform: translateX(-70px);
+    }
+    .textBox p {
+        font-size: .9rem;
+        transform: translateX(-70px);
     }
 }
