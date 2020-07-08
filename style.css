@@ -110,7 +110,7 @@ video {
     position: relative;
     max-width: 600px;
     z-index: 3;
-    transform: translateY(600px);
+    transform: translateY(700px);
     margin: 2rem;
     
 }
