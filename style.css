@@ -112,10 +112,15 @@ video {
     z-index: 3;
     transform: translateY(600px);
     margin: 2rem;
+    
 }
  .textBox h2 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.textBox h2  span {
+    color: rgb(230, 139, 53);
 }
  .textBox p {
     color: #fff;
