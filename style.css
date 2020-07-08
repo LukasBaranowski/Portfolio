@@ -109,11 +109,11 @@ video {
     max-width: 600px;
     z-index: 3;
     transform: translateY(600px);
-    margin: 3rem;
+    margin: 2rem;
 }
  .textBox h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 3rem;
 }
  .textBox p {
     color: #fff;
@@ -126,15 +126,16 @@ video {
         transform: translateY(200px);
     }
     .textBox {
-        max-width: 500px;
+        max-width: 600px;
+        margin: 1rem;
     }
     .textBox h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         transform: translateX(-100px);
 
     }
     .textBox p {
-        font-size: .5rem;
+        font-size: .7rem;
         transform: translateX(-100px);
     }
 }
