@@ -130,11 +130,11 @@ video {
     }
     .textBox h2 {
         font-size: 1.2rem;
-        transform: translateX(-120px);
+        transform: translateX(-100px);
 
     }
     .textBox p {
         font-size: .5rem;
-        transform: translateX(-120px);
+        transform: translateX(-100px);
     }
 }
