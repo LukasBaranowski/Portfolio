@@ -83,10 +83,10 @@
 .menu > div {
     position: absolute;
     width: 50%;
-    height: 110%;
+    height: 100%;
     top: 50%;
     left: 50%;
-    transform: translateX(0%) translateY(-150%);
+    transform: translateX(-50%) translateY(-50%);
     background-color: rgba(0, 0, 0, .5);
     transition: .5s;
     display: flex;
@@ -120,10 +120,10 @@
 }
 @media (max-width: 991px) {
     .menu{
-        width: 110%;
+        width: 100%;
     }
     .menu > div {
-        width: 110%;
+        width: 100%;
         opacity: .8;
     }
     .burger {
