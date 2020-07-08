@@ -129,11 +129,12 @@ video {
         max-width: 500px;
     }
     .textBox h2 {
-        font-size: 2rem;
-        transform: translateX(-70px);
+        font-size: 1.5rem;
+        transform: translateX(-100px);
+
     }
     .textBox p {
-        font-size: .9rem;
-        transform: translateX(-70px);
+        font-size: .8rem;
+        transform: translateX(-100px);
     }
 }
