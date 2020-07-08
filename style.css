@@ -1,13 +1,15 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .container{
+    display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    display: flex;
+    
 }
 .bg {
     position: relative;
@@ -69,7 +71,7 @@
         transform: translateY(600px);
     }
     100%{
-        transform: translateY(-100px);
+        transform: translateY(-50px);
     }
     
 }
@@ -122,11 +124,9 @@ video {
 }
 
 @media (max-width: 700px) {
-    .unicorn {
-        transform: translateY(200px);
-    }
+    
     .textBox {
-        max-width: 600px;
+        width: 250px;
         margin: 1rem;
     }
     .textBox h2 {
@@ -135,7 +135,7 @@ video {
 
     }
     .textBox p {
-        font-size: .7rem;
+        font-size: .9rem;
         transform: translateX(-100px);
     }
 }
