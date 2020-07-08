@@ -1,0 +1,140 @@
+
+.toggler {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.burger {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.burger div {
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff;
+    transition: .4s;
+}
+.burger div:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff;
+    top: 10px;
+    transition: .2s;
+}
+.burger div:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff;
+    top: -10px;
+    transition: .2s;
+}
+.toggler:checked + .burger div {
+    transform: rotate(855deg);
+}
+.toggler:checked:hover + .burger div {
+    transform: rotate(855deg);
+}
+.toggler:checked + .burger div:after, .toggler:checked + .burger div:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+.toggler:checked ~ .menu {
+    visibility: visible;
+}
+.toggler:checked ~ .menu div {
+    transform: translateX(-50%) translateY(-50%);
+}
+.toggler:checked ~ .menu div div {
+    opacity: 1;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 110%;
+    transition: .3s;
+    visibility: hidden;
+    z-index: 2;
+}
+.menu > div {
+    position: absolute;
+    width: 50%;
+    height: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(0%) translateY(-150%);
+    background-color: rgba(0, 0, 0, .3);
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu div div {
+    max-width: 50%;
+    max-height: 100%;
+    display: flex;
+    opacity: 0;
+}
+.menu div div ul li {
+    list-style: none;
+}
+.menu div div ul li a {
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s;
+    justify-content: center;
+    transform: translateX(75px);
+}
+.menu div div ul li a:hover {
+    color: rgb(230, 139, 53)
+}
+@media (max-width: 991px) {
+    .menu{
+        width: 110%;
+    }
+    .menu > div {
+        width: 110%;
+        opacity: .7;
+    }
+    .burger {
+        visibility: visible;
+        cursor: pointer;
+        transform: translateX(2px);
+    }
+    .toggler {
+        cursor: pointer;
+        visibility: visible;
+        transform: translateX(2px);
+    }
+    
+}
