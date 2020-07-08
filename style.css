@@ -3,7 +3,12 @@
     margin: 0;
     padding: 0;
 }
-
+.container{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 .bg {
     position: relative;
     background: #000;
@@ -79,7 +84,7 @@
     content: '';
     position: absolute;
     bottom: -53px;
-    left: 10%;
+    left: 42%;
     transform: translateX(-50%);
     width: 20px;
     height: 120px;
@@ -120,38 +125,4 @@ video {
     .unicorn{
         transform: translateY(200px);
     }
-    .unicorn:before {
-        left: 10%;
-    } 
-    
-}
-@media (max-width: 600px) {
-    .unicorn:before {
-        left: 12%;
-    } 
-    
-}
-@media (max-width: 500px) {
-    .unicorn:before {
-        left: 14%;
-    } 
-    
-}
-@media (max-width: 450px) {
-    .unicorn:before {
-        left: 18%;
-    } 
-    
-}
-@media (max-width: 400px) {
-    .unicorn:before {
-        left: 20%;
-    } 
-    
-}
-@media (max-width: 300px) {
-    .unicorn:before {
-        left: 25%;
-    } 
-    
 }
