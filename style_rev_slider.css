@@ -92,13 +92,13 @@ video {
 
 @media (max-width: 700px) {
     .box {
-        width: 90px;
-        height: 90px;
-        top: 15px;
+        width: 120px;
+        height: 120px;
+        top: -40px;
         
     } 
     .box span {
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(120px);
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(170px);
     }
     .box span img {
         opacity: .9;
