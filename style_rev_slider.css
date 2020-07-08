@@ -110,4 +110,7 @@ video {
     .textBox h2 {
         font-size: 2rem;
     }
+    .box span img:hover {
+        transform: scale(1.3); 
+    }
 }
