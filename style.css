@@ -52,11 +52,11 @@
     }
 }
 .unicorn:hover { 
-    animation: fly 15s;
+    animation: fly 10s linear 0.1s 1 normal forwards;
     cursor: pointer;
 }
 .unicorn:hover + .textBox{
-    animation: text 3s linear 0.1s 1 normal forwards;
+    animation: text 3s linear 0.3s 1 normal forwards;
 }
 @keyframes fly {
     0% {
@@ -112,7 +112,7 @@ video {
     z-index: 3;
     transform: translateY(700px);
     margin: 2rem;
-    
+    background-color: rgba(0, 0, 0, .7);
 }
  .textBox h2 {
     color: #fff;
