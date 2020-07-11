@@ -20,6 +20,7 @@ function stars () {
     }
 }
 stars()
+
 //Fly animation
 let unicorn = document.querySelector('.unicorn');
 let textBox = document.querySelector('.textBox');
@@ -31,9 +32,8 @@ function fly () {
         unicorn.classList.remove('fly');
     })
 }
-
-
 fly();
+
 //Menu Video
 let menuVideo = document.querySelector('.menu_video');
 let menu = document.querySelector('.toggler');
