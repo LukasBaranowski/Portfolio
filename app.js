@@ -1,3 +1,4 @@
+//Stars animation
 function stars () {
     const amount = 50;
     const bg = document.querySelector('.bg');
@@ -19,7 +20,7 @@ function stars () {
     }
 }
 stars()
-
+//Fly animation
 let unicorn = document.querySelector('.unicorn');
 let textBox = document.querySelector('.textBox');
 function fly () {
@@ -33,3 +34,15 @@ function fly () {
 
 
 fly();
+//Menu Video
+let menuVideo = document.querySelector('.menu_video');
+let menu = document.querySelector('.toggler');
+
+function playVideo () {
+    menu.addEventListener('click', () => {
+        menuVideo.play();
+        menuVideo.style.zIndex = '1';
+        menu.style.visibility = 'hidden';
+    });
+}
+playVideo();
