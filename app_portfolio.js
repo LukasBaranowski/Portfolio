@@ -4,7 +4,7 @@ let menu = document.querySelector('.toggler');
 function playVideo () {
     menu.addEventListener('click', () => {
         menuVideo.play();
-        menuVideo.style.zIndex = '1';
+        menuVideo.style.zIndex = '5';
         menu.style.visibility = 'hidden';
     });
 }
