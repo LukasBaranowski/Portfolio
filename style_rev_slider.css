@@ -73,7 +73,6 @@ video {
     align-items: center;
     justify-content: center;
     max-width: 600px;
-    z-index: 2;
     margin: 1rem;
     opacity: .8;
     top: 100px;
