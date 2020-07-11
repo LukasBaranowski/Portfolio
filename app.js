@@ -1,17 +1,14 @@
-let unicorn = document.querySelector('.unicorn');
-let textBox = document.querySelector('.textBox');
-
-let star = document.createElement('i');
-let x = Math.floor(Math.random()*window.innerWidth);
-let duration = Math.random() * 2.5;
-let h = Math.random() * 100;
-let amount = 50;
-let bg = document.querySelector('.bg');
-let i = 0;
-
 function stars () {
-    
+    const amount = 50;
+    const bg = document.querySelector('.bg');
+    let i = 0;
     while (i < amount){
+        const star = document.createElement('i');
+        const x = Math.floor(Math.random()*window.innerWidth);
+
+        const duration = Math.random() * 2.5;
+        const h = Math.random() * 100;
+
         star.style.left = x + 'px';
         star.style.width = 0.5 + 'px';
         star.style.height =  5 + h + 'px';
@@ -21,7 +18,10 @@ function stars () {
         i++
     }
 }
+stars()
 
+let unicorn = document.querySelector('.unicorn');
+let textBox = document.querySelector('.textBox');
 function fly () {
      unicorn.addEventListener('click', function () {
         unicorn.classList.add('fly');
@@ -33,4 +33,3 @@ function fly () {
 
 
 fly();
-stars();
