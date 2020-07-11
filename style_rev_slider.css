@@ -97,7 +97,7 @@ video {
         
     } 
     .box span {
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(170px);
+        transform: rotateY(calc(var(--i) * 40deg)) translateZ(170px);
     }
     .box span img {
         opacity: .9;
