@@ -51,11 +51,14 @@
         transform: translateY(2px);
     }
 }
-.unicorn:hover { 
-    animation: fly 10s linear 0.1s 1 normal forwards;
+.unicorn:hover {
     cursor: pointer;
 }
-.unicorn:hover + .textBox{
+.fly { 
+    animation: fly 10s ;
+    cursor: pointer;
+}
+.fly + .textBox{
     animation: text 3s linear 0.3s 1 normal forwards;
 }
 @keyframes fly {
@@ -107,6 +110,7 @@ video {
 
 /*--------text Box---------*/
  .textBox {
+    cursor: pointer;
     position: relative;
     max-width: 600px;
     z-index: 3;
@@ -116,7 +120,7 @@ video {
 }
  .textBox h2 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 .textBox h2  span {
@@ -124,7 +128,7 @@ video {
 }
  .textBox p {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin: 5px 0 25px;
 }
 
