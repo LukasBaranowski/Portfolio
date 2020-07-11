@@ -105,7 +105,6 @@ video {
     .textBox {
         left: 50%;
         transform: translateX(-55%);
-        transform: translateY(-10%);
     }
     .textBox h2 {
         font-size: 2rem;
