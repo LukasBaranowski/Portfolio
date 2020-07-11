@@ -86,7 +86,10 @@ video {
 .textBox h2  span {
     color: rgb(139, 184, 236);
 }
-
+.menu_video {
+    opacity: 1;
+    z-index: -5;
+}
 
 
 @media (max-width: 700px) {
