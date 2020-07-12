@@ -44,7 +44,6 @@ function playVideo () {
         menuVideo.play();
         menuVideo.playbackRate = 3;
         menuVideo.style.zIndex = '5';
-        menu.style.visibility = 'hidden';
         burger.style.visibility = 'hidden';
     });
 }
