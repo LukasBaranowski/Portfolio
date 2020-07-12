@@ -71,7 +71,7 @@
 }
 @keyframes text {
     0% {
-        transform: translateY(600px);
+        transform: translateY(700px);
     }
     100%{
         transform: translateY(-50px);
@@ -117,10 +117,11 @@ video {
     cursor: pointer;
     position: relative;
     max-width: 600px;
-    z-index: 1;
-    transform: translateY(700px);
+    z-index: 3;
+    transform: translateY(800px);
     margin: 2rem;
-    
+    padding: 3rem;
+    background: rgba(0, 0, 0, .4);
 }
  .textBox h2 {
     color: #fff;
